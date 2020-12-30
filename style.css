@@ -1,0 +1,72 @@
+html, body {
+    margin: 0rem;
+    padding: 0rem;
+    color: white;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    /* align-iems: center; */
+}
+
+
+
+img {
+    /* height: 1000px; */
+    /* width: 25vw; */
+    /* height: 50vh; */
+}
+
+.photoButton {
+    /* border: none; */
+    /* background: none; */
+    height: 20vh;
+    width: 25vw;
+    background-color: blue;
+    font-size: 50px;
+    
+}
+
+/* https://codepen.io/miraviolet/pen/ZobWEg */
+button.AskMe {
+    border-radius: 100rem;
+    padding: 1rem;
+    font-size: 1rem;
+    padding: .5rem 3rem;
+    color: white;
+    color: rgb(252, 250, 162);
+     
+    /* box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5); */
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+    background-origin: border-box;
+    
+    /* gradient color from https://cssgradient.io/ */
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(252,181,246,1) 0%, rgba(238,21,120,1) 52%);
+
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #000000 inset;
+
+  }
+  
+  button.AskMe:hover {
+    box-shadow: none;
+    color: rgb(0, 0, 0);
+    border: rgb(252, 250, 162);
+    font-weight: bold;
+
+  }
+
+
+  
+
+/* Cat Specific  Design */
+
+/* Dog Specific */
+
