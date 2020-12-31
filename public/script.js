@@ -3,13 +3,13 @@ const baseUrl = "https://cat-fact.herokuapp.com/facts/random?animal_"
 const section = document.querySelector('section');
 const footer = document.querySelector('footer');
 
-
-
 // const factAmount = 1;
 // const Cat = cat;
 // const Dog = dog;
 const catFacts = document.getElementById('cat');
 const dogFacts = document.getElementById('dog');
+const ScreenView = document.getElementById('wholePage');
+
 
 
 
@@ -20,19 +20,71 @@ catFacts.addEventListener('click', erase)
 
 function erase() {
     
-    // catFacts.remove();
-    // dogFacts.remove();
-    // document.getElementById('right').style.height = "50px"
     document.getElementById('right').style.display = "none";
+    let factContainer = document.createElement('div');
+    // let showerCat = document.createElement('IMG')
+    // let rightContainer = document.createElement('div');
+
+    // let bubbles = document.createElement('div');
+    // let bubbleOne = document.createElement('div');
+    // let bubbleTwo = document.createElement('div');
+    // let bubbleThree = document.createElement('div');
+    // let bubbleFour = document.createElement('div');
+    // let bubbleFive = document.createElement('div');
+    // let bubbleSix = document.createElement('div');
+    // let bubbleSeven = document.createElement('div');
+    // let bubbleEight = document.createElement('div');
+    // let bubbleNine = document.createElement('div');
+    // let bubbleTen = document.createElement('div');
+
+    // factContainer.appendChild(section);
+    // factContainer.appendChild(footer);
 
     
+
+    // showerCat.src = "./assets/ShowerCapCat2.jpeg";
+    
+    // Create Class Name
+    factContainer.className = "factContainer"
+    // showerCat.className = "showerCat"
+    // rightContainer.className = "rightSide";
+    
+    // bubbles.className = "bubbles";
+    // bubbleOne.className = "bubble";
+    // bubbleTwo.className = "bubble";
+    // bubbleThree.className = "bubble";
+    // bubbleFour.className = "bubble";
+    // bubbleFive.className = "bubble";
+    // bubbleSix.className = "bubble";
+    // bubbleSeven.className = "bubble";
+    // bubbleEight.className = "bubble";
+    // bubbleNine.className = "bubble";
+    // bubbleTen.className = "bubble";
+    
+
+
+    rightContainer.appendChild(showerCat);
+    bubbles.appendChild(bubbleOne);
+    bubbles.appendChild(bubbleTwo);
+    bubbles.appendChild(bubbleThree);
+    bubbles.appendChild(bubbleFour);
+    bubbles.appendChild(bubbleFive);
+    bubbles.appendChild(bubbleSix);
+    bubbles.appendChild(bubbleSeven);
+    bubbles.appendChild(bubbleEight);
+    bubbles.appendChild(bubbleNine);
+    bubbles.appendChild(bubbleTen);
+    showerCat.appendChild(bubbles);
+    ScreenView.appendChild(rightContainer);
+
+
+ 
 }
 
 catFacts.addEventListener('click', complete)
 
 function complete() {
 
-    
 
     let fish = "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1"
 
@@ -85,6 +137,9 @@ function displayFacts(json) {
         // sideText.appendChild(section);
         // sideText.appendChild(footer);
 
+        factContainer.appendChild(section);
+        factContainer.appendChild(footer);
+
         button.addEventListener('click', () => {
 
             complete();
@@ -110,6 +165,77 @@ function displayFacts(json) {
 
 
 // Dog Fetch----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// dogFacts.addEventListener('click', erase)
+
+// function erase() {
+    
+//     document.getElementById('right').style.display = "none";
+//     let factContainer = document.createElement('div');
+//     let showerDog = document.createElement('IMG')
+//     let rightContainer = document.createElement('div');
+
+//     let bubbles = document.createElement('div');
+//     let bubbleOne = document.createElement('div');
+//     let bubbleTwo = document.createElement('div');
+//     let bubbleThree = document.createElement('div');
+//     let bubbleFour = document.createElement('div');
+//     let bubbleFive = document.createElement('div');
+//     let bubbleSix = document.createElement('div');
+//     let bubbleSeven = document.createElement('div');
+//     let bubbleEight = document.createElement('div');
+//     let bubbleNine = document.createElement('div');
+//     let bubbleTen = document.createElement('div');
+
+//     // factContainer.appendChild(section);
+//     // factContainer.appendChild(footer);
+
+    
+
+//     dogShower.src = "./assets/CroppedDogwShowerCap2.jpg";
+    
+//     // Create Class Name
+//     factContainer.className = "factContainer"
+//     showerDog.className = "showerCat"
+//     rightContainer.className = "rightSide";
+    
+//     bubbles.className = "bubbles";
+//     bubbleOne.className = "bubble";
+//     bubbleTwo.className = "bubble";
+//     bubbleThree.className = "bubble";
+//     bubbleFour.className = "bubble";
+//     bubbleFive.className = "bubble";
+//     bubbleSix.className = "bubble";
+//     bubbleSeven.className = "bubble";
+//     bubbleEight.className = "bubble";
+//     bubbleNine.className = "bubble";
+//     bubbleTen.className = "bubble";
+    
+
+
+//     rightContainer.appendChild(showerCat);
+//     bubbles.appendChild(bubbleOne);
+//     bubbles.appendChild(bubbleTwo);
+//     bubbles.appendChild(bubbleThree);
+//     bubbles.appendChild(bubbleFour);
+//     bubbles.appendChild(bubbleFive);
+//     bubbles.appendChild(bubbleSix);
+//     bubbles.appendChild(bubbleSeven);
+//     bubbles.appendChild(bubbleEight);
+//     bubbles.appendChild(bubbleNine);
+//     bubbles.appendChild(bubbleTen);
+//     rightContainer.appendChild(bubbles);
+//     ScreenView.appendChild(rightContainer);
+
+
+ 
+// }
+
+
+
+
+
+
+
 dogFacts.addEventListener('click', clear) 
 
 function clear() {
@@ -171,6 +297,9 @@ function displayResults(json) {
         section.appendChild(factContainer);
         footer.appendChild(newFact);
         footer.appendChild(home);
+
+        factContainer.appendChild(section);
+        sfactContainer.appendChild(footer);
 
         newFact.addEventListener('click', () => {
 
