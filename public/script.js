@@ -2,12 +2,12 @@ const baseUrl = "https://cat-fact.herokuapp.com/facts/random?animal_"
 
 const section = document.querySelector('section');
 const footer = document.querySelector('footer');
-let FirstPage = document.getElementsByClassName('imageContainer');
 
 
-const factAmount = 1;
-const Cat = cat;
-const Dog = dog;
+
+// const factAmount = 1;
+// const Cat = cat;
+// const Dog = dog;
 const catFacts = document.getElementById('cat');
 const dogFacts = document.getElementById('dog');
 
@@ -20,8 +20,11 @@ catFacts.addEventListener('click', erase)
 
 function erase() {
     
-    catFacts.remove();
-    dogFacts.remove();
+    // catFacts.remove();
+    // dogFacts.remove();
+    // document.getElementById('right').style.height = "50px"
+    document.getElementById('right').style.display = "none";
+
     
 }
 
@@ -110,8 +113,9 @@ function displayFacts(json) {
 dogFacts.addEventListener('click', clear) 
 
 function clear() {
-    catFacts.remove();
-    dogFacts.remove();
+    // catFacts.remove();
+    // dogFacts.remove();
+    document.getElementById('right').style.display = "none";
     
 }
 
