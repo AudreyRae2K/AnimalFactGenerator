@@ -8,31 +8,42 @@ html, body {
 }
 
 
-
 .imageContainer {
     display: flex;
     justify-content: center;
-    /* align-iems: center; */
 }
 
+.roundButton {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    /* border-radius: 50%;
+    background-color: blue;
+    width: 50%;
+    height: 50%; */
+}
 
 .factContainer {
-    display: block;
-    width: 50vw;
+    
+    /* display: block; */
+    /* width: 50vw; */
 }
 img {
-    /* height: 1000px; */
-    /* width: 25vw; */
+    /* height: 100px; */
+    width: 200px;
     /* height: 50vh; */
+    /* background-color: black; */
+    
 }
 
 .photoButton {
     /* border: none; */
-    /* background: none; */
-    height: 20vh;
-    width: 25vw;
-    background-color: blue;
-    font-size: 50px;
+    background: none;
+    /* height: 20vh; 
+    width: 25vw;  */
+    /* background-color: blue; */
+    /* font-size: 50px; */
     
 }
 
@@ -66,8 +77,15 @@ button.AskMe {
 
   }
 
+/* heading */
+.pun {
+    font-family: 'Lobster Two', cursive;
+}
 
-  
+/* paragraphs */
+.information {
+    font-family: 'Dancing Script', cursive;
+}
 
 /* Cat Specific  Design */
 

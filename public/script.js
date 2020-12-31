@@ -10,19 +10,20 @@ const Cat = cat;
 const Dog = dog;
 const catFacts = document.getElementById('cat');
 const dogFacts = document.getElementById('dog');
-const imageContainer = document.getElementById('cat')
 
 
+
+// const petButton = document.getElementsByClassName('photoButton');
 
 
 catFacts.addEventListener('click', erase) 
 
 function erase() {
+    
     catFacts.remove();
     dogFacts.remove();
     
 }
-
 
 catFacts.addEventListener('click', complete)
 
@@ -68,6 +69,7 @@ function displayFacts(json) {
         
         
         //Set class name
+        kittenAround.className = "pun"
         Fact.className = "information";
         button.className = "AskMe";
         mainPage.className = "AskMe";
@@ -99,13 +101,15 @@ function displayFacts(json) {
             location.reload();
     
             })
+
+       
 }
 
 
 // Dog Fetch----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-dogFacts.addEventListener('click', erase) 
+dogFacts.addEventListener('click', clear) 
 
-function erase() {
+function clear() {
     catFacts.remove();
     dogFacts.remove();
     
@@ -153,6 +157,7 @@ function displayResults(json) {
         
     
         //Set class name
+        FurReal.className = "pun"
         factContainer.className = "information";
         newFact.className = "AskMe";
         home.className = "AskMe";
