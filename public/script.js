@@ -77,8 +77,8 @@ function displayFacts(json) {
         section.appendChild(Fact);
         footer.appendChild(button);
         footer.appendChild(mainPage);
-        sideText.appendChild(section);
-        sideText.appendChild(footer);
+        // sideText.appendChild(section);
+        // sideText.appendChild(footer);
 
         button.addEventListener('click', () => {
 
