@@ -161,81 +161,79 @@ function displayFacts(json) {
 
 
 // Dog Fetch----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// dogFacts.addEventListener('click', erase)
+dogFacts.addEventListener('click', clear)
 
-// function erase() {
+function clear() {
     
-//     document.getElementById('right').style.display = "none";
-//     let factContainer = document.createElement('div');
-//     let showerDog = document.createElement('IMG')
-//     let rightContainer = document.createElement('div');
+    document.getElementById('right').style.display = "none";
 
-//     let bubbles = document.createElement('div');
-//     let bubbleOne = document.createElement('div');
-//     let bubbleTwo = document.createElement('div');
-//     let bubbleThree = document.createElement('div');
-//     let bubbleFour = document.createElement('div');
-//     let bubbleFive = document.createElement('div');
-//     let bubbleSix = document.createElement('div');
-//     let bubbleSeven = document.createElement('div');
-//     let bubbleEight = document.createElement('div');
-//     let bubbleNine = document.createElement('div');
-//     let bubbleTen = document.createElement('div');
 
-//     // factContainer.appendChild(section);
-//     // factContainer.appendChild(footer);
+    // let factContainer = document.createElement('div');
+    let showerDog = document.createElement('IMG')
+    let rightContainer = document.createElement('div');
+
+    // let bubbles = document.createElement('div');
+    // let bubbleOne = document.createElement('div');
+    // let bubbleTwo = document.createElement('div');
+    // let bubbleThree = document.createElement('div');
+    // let bubbleFour = document.createElement('div');
+    // let bubbleFive = document.createElement('div');
+    // let bubbleSix = document.createElement('div');
+    // let bubbleSeven = document.createElement('div');
+    // let bubbleEight = document.createElement('div');
+    // let bubbleNine = document.createElement('div');
+    // let bubbleTen = document.createElement('div');
 
     
-
-//     dogShower.src = "./assets/CroppedDogwShowerCap2.jpg";
+    showerDog.src = "./assets/CroppedDogwShowerCap2.jpg";
     
-//     // Create Class Name
-//     factContainer.className = "factContainer"
-//     showerDog.className = "showerCat"
-//     rightContainer.className = "rightSide";
+    // Create Class Name
+    // factContainer.className = "factContainer"
+    showerDog.className = "showerCat"
+    rightContainer.className = "rightSide";
     
-//     bubbles.className = "bubbles";
-//     bubbleOne.className = "bubble";
-//     bubbleTwo.className = "bubble";
-//     bubbleThree.className = "bubble";
-//     bubbleFour.className = "bubble";
-//     bubbleFive.className = "bubble";
-//     bubbleSix.className = "bubble";
-//     bubbleSeven.className = "bubble";
-//     bubbleEight.className = "bubble";
-//     bubbleNine.className = "bubble";
-//     bubbleTen.className = "bubble";
+    // bubbles.className = "bubbles";
+    // bubbleOne.className = "bubble";
+    // bubbleTwo.className = "bubble";
+    // bubbleThree.className = "bubble";
+    // bubbleFour.className = "bubble";
+    // bubbleFive.className = "bubble";
+    // bubbleSix.className = "bubble";
+    // bubbleSeven.className = "bubble";
+    // bubbleEight.className = "bubble";
+    // bubbleNine.className = "bubble";
+    // bubbleTen.className = "bubble";
     
 
 
-//     rightContainer.appendChild(showerCat);
-//     bubbles.appendChild(bubbleOne);
-//     bubbles.appendChild(bubbleTwo);
-//     bubbles.appendChild(bubbleThree);
-//     bubbles.appendChild(bubbleFour);
-//     bubbles.appendChild(bubbleFive);
-//     bubbles.appendChild(bubbleSix);
-//     bubbles.appendChild(bubbleSeven);
-//     bubbles.appendChild(bubbleEight);
-//     bubbles.appendChild(bubbleNine);
-//     bubbles.appendChild(bubbleTen);
-//     rightContainer.appendChild(bubbles);
-//     ScreenView.appendChild(rightContainer);
+    rightContainer.appendChild(showerDog);
+    // bubbles.appendChild(bubbleOne);
+    // bubbles.appendChild(bubbleTwo);
+    // bubbles.appendChild(bubbleThree);
+    // bubbles.appendChild(bubbleFour);
+    // bubbles.appendChild(bubbleFive);
+    // bubbles.appendChild(bubbleSix);
+    // bubbles.appendChild(bubbleSeven);
+    // bubbles.appendChild(bubbleEight);
+    // bubbles.appendChild(bubbleNine);
+    // bubbles.appendChild(bubbleTen);
+    // rightContainer.appendChild(bubbles);
+    ScreenView.appendChild(rightContainer);
 
 
  
-// }
-
-
-
-dogFacts.addEventListener('click', clear) 
-
-function clear() {
-    // catFacts.remove();
-    // dogFacts.remove();
-    document.getElementById('right').style.display = "none";
-    
 }
+
+
+
+// dogFacts.addEventListener('click', clear) 
+
+// function clear() {
+//     // catFacts.remove();
+//     // dogFacts.remove();
+//     document.getElementById('right').style.display = "none";
+    
+// }
 
 dogFacts.addEventListener('click', link)
 
