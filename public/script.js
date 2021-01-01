@@ -1,14 +1,17 @@
-const baseUrl = "https://cat-fact.herokuapp.com/facts/random?animal_"
+const baseUrl = "https://cat-fact.herokuapp.com/facts/random"
+// let fish = "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1"
 
 const section = document.querySelector('section');
 const footer = document.querySelector('footer');
 
 // const factAmount = 1;
-// const Cat = cat;
+const Cat = cat;
 // const Dog = dog;
 const catFacts = document.getElementById('cat');
 const dogFacts = document.getElementById('dog');
 const ScreenView = document.getElementById('wholePage');
+
+
 
 
 
@@ -24,17 +27,17 @@ function erase() {
     let showerCat = document.createElement('IMG');
     let rightContainer = document.createElement('div');
 
-    // let bubbles = document.createElement('div');
-    // let bubbleOne = document.createElement('div');
-    // let bubbleTwo = document.createElement('div');
-    // let bubbleThree = document.createElement('div');
-    // let bubbleFour = document.createElement('div');
-    // let bubbleFive = document.createElement('div');
-    // let bubbleSix = document.createElement('div');
-    // let bubbleSeven = document.createElement('div');
-    // let bubbleEight = document.createElement('div');
-    // let bubbleNine = document.createElement('div');
-    // let bubbleTen = document.createElement('div');
+    let bubbles = document.createElement('div');
+    let bubbleOne = document.createElement('div');
+    let bubbleTwo = document.createElement('div');
+    let bubbleThree = document.createElement('div');
+    let bubbleFour = document.createElement('div');
+    let bubbleFive = document.createElement('div');
+    let bubbleSix = document.createElement('div');
+    let bubbleSeven = document.createElement('div');
+    let bubbleEight = document.createElement('div');
+    let bubbleNine = document.createElement('div');
+    let bubbleTen = document.createElement('div');
 
     // factContainer.appendChild(section);
     // factContainer.appendChild(footer);
@@ -48,34 +51,38 @@ function erase() {
     showerCat.className = "showerCat"
     rightContainer.className = "rightSide";
     
-    // bubbles.className = "bubbles";
-    // bubbleOne.className = "bubble";
-    // bubbleTwo.className = "bubble";
-    // bubbleThree.className = "bubble";
-    // bubbleFour.className = "bubble";
-    // bubbleFive.className = "bubble";
-    // bubbleSix.className = "bubble";
-    // bubbleSeven.className = "bubble";
-    // bubbleEight.className = "bubble";
-    // bubbleNine.className = "bubble";
-    // bubbleTen.className = "bubble";
+    bubbles.className = "bubbles";
+    bubbleOne.className = "bubble";
+    bubbleTwo.className = "bubble";
+    bubbleThree.className = "bubble";
+    bubbleFour.className = "bubble";
+    bubbleFive.className = "bubble";
+    bubbleSix.className = "bubble";
+    bubbleSeven.className = "bubble";
+    bubbleEight.className = "bubble";
+    bubbleNine.className = "bubble";
+    bubbleTen.className = "bubble";
+    
     
 
     
-    // bubbles.appendChild(bubbleOne);
-    // bubbles.appendChild(bubbleTwo);
-    // bubbles.appendChild(bubbleThree);
-    // bubbles.appendChild(bubbleFour);
-    // bubbles.appendChild(bubbleFive);
-    // bubbles.appendChild(bubbleSix);
-    // bubbles.appendChild(bubbleSeven);
-    // bubbles.appendChild(bubbleEight);
-    // bubbles.appendChild(bubbleNine);
-    // bubbles.appendChild(bubbleTen);
-    // showerCat.appendChild(bubbles);
+    bubbles.appendChild(bubbleOne);
+    bubbles.appendChild(bubbleTwo);
+    bubbles.appendChild(bubbleThree);
+    bubbles.appendChild(bubbleFour);
+    bubbles.appendChild(bubbleFive);
+    bubbles.appendChild(bubbleSix);
+    bubbles.appendChild(bubbleSeven);
+    bubbles.appendChild(bubbleEight);
+    bubbles.appendChild(bubbleNine);
+    bubbles.appendChild(bubbleTen);
+    showerCat.appendChild(bubbles);
+
     
     ScreenView.appendChild(rightContainer);
     rightContainer.appendChild(showerCat);
+    rightContainer.appendChild(bubbles);
+    
 
  
 }
@@ -83,7 +90,6 @@ function erase() {
 catFacts.addEventListener('click', complete)
 
 function complete() {
-
 
     let fish = "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1"
 
@@ -171,52 +177,52 @@ function clear() {
     let showerDog = document.createElement('IMG');
     let rightContainer = document.createElement('div');
 
-    // let bubbles = document.createElement('div');
-    // let bubbleOne = document.createElement('div');
-    // let bubbleTwo = document.createElement('div');
-    // let bubbleThree = document.createElement('div');
-    // let bubbleFour = document.createElement('div');
-    // let bubbleFive = document.createElement('div');
-    // let bubbleSix = document.createElement('div');
-    // let bubbleSeven = document.createElement('div');
-    // let bubbleEight = document.createElement('div');
-    // let bubbleNine = document.createElement('div');
-    // let bubbleTen = document.createElement('div');
+    let bubbles = document.createElement('div');
+    let bubbleOne = document.createElement('div');
+    let bubbleTwo = document.createElement('div');
+    let bubbleThree = document.createElement('div');
+    let bubbleFour = document.createElement('div');
+    let bubbleFive = document.createElement('div');
+    let bubbleSix = document.createElement('div');
+    let bubbleSeven = document.createElement('div');
+    let bubbleEight = document.createElement('div');
+    let bubbleNine = document.createElement('div');
+    let bubbleTen = document.createElement('div');
 
     
-    showerDog.src = "./assets/CroppedDogwShowerCap2.jpg";
+    showerDog.src = "./assets/CroppedDogwShowerCapNarrower.jpg";
     
     // Create Class Name
     showerDog.className = "showerCat"
     rightContainer.className = "rightSide";
     
-    // bubbles.className = "bubbles";
-    // bubbleOne.className = "bubble";
-    // bubbleTwo.className = "bubble";
-    // bubbleThree.className = "bubble";
-    // bubbleFour.className = "bubble";
-    // bubbleFive.className = "bubble";
-    // bubbleSix.className = "bubble";
-    // bubbleSeven.className = "bubble";
-    // bubbleEight.className = "bubble";
-    // bubbleNine.className = "bubble";
-    // bubbleTen.className = "bubble";
+    bubbles.className = "bubbles";
+    bubbleOne.className = "bubble";
+    bubbleTwo.className = "bubble";
+    bubbleThree.className = "bubble";
+    bubbleFour.className = "bubble";
+    bubbleFive.className = "bubble";
+    bubbleSix.className = "bubble";
+    bubbleSeven.className = "bubble";
+    bubbleEight.className = "bubble";
+    bubbleNine.className = "bubble";
+    bubbleTen.className = "bubble";
     
 
-    // bubbles.appendChild(bubbleOne);
-    // bubbles.appendChild(bubbleTwo);
-    // bubbles.appendChild(bubbleThree);
-    // bubbles.appendChild(bubbleFour);
-    // bubbles.appendChild(bubbleFive);
-    // bubbles.appendChild(bubbleSix);
-    // bubbles.appendChild(bubbleSeven);
-    // bubbles.appendChild(bubbleEight);
-    // bubbles.appendChild(bubbleNine);
-    // bubbles.appendChild(bubbleTen);
+    bubbles.appendChild(bubbleOne);
+    bubbles.appendChild(bubbleTwo);
+    bubbles.appendChild(bubbleThree);
+    bubbles.appendChild(bubbleFour);
+    bubbles.appendChild(bubbleFive);
+    bubbles.appendChild(bubbleSix);
+    bubbles.appendChild(bubbleSeven);
+    bubbles.appendChild(bubbleEight);
+    bubbles.appendChild(bubbleNine);
+    bubbles.appendChild(bubbleTen);
 
     ScreenView.appendChild(rightContainer);
     rightContainer.appendChild(showerDog);
-    // rightContainer.appendChild(bubbles);
+    rightContainer.appendChild(bubbles);
 
  
 }
@@ -258,7 +264,7 @@ function displayResults(json) {
         
     
         // set text for elements
-        FurReal.textContent = `I'm about to unleash some "fur-bulous" facts!`
+        FurReal.textContent = `I'm "unleashing" some "fur-bulous" facts!`
         factContainer.textContent = json.text;
         newFact.textContent = `"Retrieve" More Facts`;
         home.textContent = "Home"
@@ -298,5 +304,3 @@ function displayResults(json) {
     
             })
     }
-
-

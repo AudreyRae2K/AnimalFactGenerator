@@ -24,12 +24,18 @@ html, body {
     text-align: center;
 
 }
+
+
+
+    
 .imageContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-left: 23%;
 }
+
+
 
 .roundButton {
     border-radius: 50%; 
@@ -168,11 +174,11 @@ button.AskMe {
     background-position: 0 0, 30px 30px;
 
     width: 50vw;
-    height: 100vh;
-    /* position: fixed right; */
+    max-width: 50vw;
+    min-height: 100vh;
+    position: fixed bottom;
+    bottom: 0em;
     
-    
-
 }
 
 
@@ -206,19 +212,19 @@ footer {
 /* Bubble animation from https://codepen.io/Momika/pen/ydaWmQ  */
 .bubbles{
     position:absolute;
-    width:100%;
+    width:50%;
     height: 100%;
-    z-index: 1;
+    z-index: 1000;
     overflow:hidden; 
     /* this cause me not to be able to scroll down */
-    top:0;
-    left:0;
+    /* top:0;
+    left:0; */
    }
   .bubble{
     position: absolute;
-    bottom:-100px;
-    width:40px;
-    height: 40px;
+    /* bottom:-100px; */
+    /* width:40px; */
+    /* height: 40px; */
     background: rgb(241, 247, 168);
     border-radius:50%;
     opacity:0.5;
