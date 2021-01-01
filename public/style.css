@@ -1,3 +1,4 @@
+
 html, body {
     margin: 0rem;
     padding: 0rem;
@@ -15,43 +16,71 @@ html, body {
 
 }
 
+#Raining {
+    font-family: 'Lobster Two', cursive;
+    color: rgb(252, 249, 118);
+    font-size: 6em;
+    text-align: center;
+
+}
 .imageContainer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 23%;
 }
 
 .roundButton {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    /* border-radius: 50%;
-    background-color: blue;
-    width: 50%;
-    height: 50%; */
+    border-radius: 50%; 
+    border: 5px solid rgb(255, 47, 186);
+    margin: 5em;
+    background-color: black;
+   
+
+    position: relative;
+    text-align: center;
+    color: white;
 }
+
+section:empty {
+    display: none;
+}
+
+footer:empty {
+    display: none;
+}
+
 
 .factContainer {
     /* display: none; */
     /* display: flex; */
     width: 50vw;
 }
+
+
 .paw {
-    /* height: 100px; */
+
     width: 200px;
-    /* height: 50vh; */
-    /* background-color: black; */
-    
+     
 }
 
+.animalText {
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(252, 249, 118);
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+
 .photoButton {
-    /* border: none; */
+    width: 100%;
+    padding: 3em;
     background: none;
-    /* height: 20vh; 
-    width: 25vw;  */
-    /* background-color: blue; */
-    /* font-size: 50px; */
-    
+    border: none;
+  
 }
 
 /* https://codepen.io/miraviolet/pen/ZobWEg */
@@ -62,6 +91,10 @@ button.AskMe {
     padding: .5rem 3rem;
     color: white;
     color: rgb(252, 250, 162);
+    /* min-width: 200px; */
+    margin: 1em;
+
+    
      
     /* box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5); */
     border: solid 3px transparent;
@@ -73,6 +106,7 @@ button.AskMe {
 
     background-clip: content-box, border-box;
     box-shadow: 2px 1000px 1px #000000 inset;
+
 
   }
   
@@ -88,9 +122,15 @@ button.AskMe {
 .pun {
     padding-right: 5%;
     padding-left: 5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
     font-size: 6vw;
     font-family: 'Lobster Two', cursive;
     color: rgb(255, 146, 213);
+    text-align: center;
+
+
 }
 
 /* paragraphs */
@@ -99,7 +139,7 @@ button.AskMe {
     color: rgb(255, 146, 213);
     margin-right: 1em;
     margin-left: 1em;
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 
@@ -130,6 +170,21 @@ button.AskMe {
     position: fixed;
     height: 100vh;
 }
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+/* Cat Specific  Design */
+
+/* Dog Specific */
+
+
+
 
 /* Bubble animation from https://codepen.io/Momika/pen/ydaWmQ  */
 .bubbles{
@@ -234,9 +289,3 @@ button.AskMe {
       transform:translateX(-200px);
     }
   } 
-
-
-/* Cat Specific  Design */
-
-/* Dog Specific */
-

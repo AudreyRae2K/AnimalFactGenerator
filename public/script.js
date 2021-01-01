@@ -12,16 +12,14 @@ const ScreenView = document.getElementById('wholePage');
 
 
 
-
-// const petButton = document.getElementsByClassName('photoButton');
-
-
 catFacts.addEventListener('click', erase) 
 
 function erase() {
 
     
     document.getElementById('right').style.display = "none";
+    
+
     // let factContainer = document.createElement('div');
     let showerCat = document.createElement('IMG');
     let rightContainer = document.createElement('div');
@@ -118,10 +116,10 @@ function displayFacts(json) {
     
 
         // set text for elements
-        kittenAround.textContent = 'I am not "kitten" around. These facts are fur-real!'
+        kittenAround.textContent = `I am not "kitten" around. These facts are "fur-real!"`
         Fact.textContent = json.text;
-        button.textContent = 'Purress for new cat fact';
-        mainPage.textContent = "Time to go home"
+        button.textContent = `"PURR-ess" for New Fact`;
+        mainPage.textContent = "Home"
         
         
         //Set class name
@@ -189,7 +187,6 @@ function clear() {
     showerDog.src = "./assets/CroppedDogwShowerCap2.jpg";
     
     // Create Class Name
-    // factContainer.className = "factContainer"
     showerDog.className = "showerCat"
     rightContainer.className = "rightSide";
     
@@ -206,8 +203,6 @@ function clear() {
     // bubbleTen.className = "bubble";
     
 
-
-    
     // bubbles.appendChild(bubbleOne);
     // bubbles.appendChild(bubbleTwo);
     // bubbles.appendChild(bubbleThree);
@@ -218,11 +213,10 @@ function clear() {
     // bubbles.appendChild(bubbleEight);
     // bubbles.appendChild(bubbleNine);
     // bubbles.appendChild(bubbleTen);
-    // rightContainer.appendChild(bubbles);
-    
+
     ScreenView.appendChild(rightContainer);
     rightContainer.appendChild(showerDog);
-
+    // rightContainer.appendChild(bubbles);
 
  
 }
@@ -233,7 +227,7 @@ dogFacts.addEventListener('click', link)
 
 function link() {
 
-    
+
     let ball = "https://cat-fact.herokuapp.com/facts/random?animal_type=dog&amount=1"
 
 
@@ -264,10 +258,10 @@ function displayResults(json) {
         
     
         // set text for elements
-        FurReal.textContent = 'FurReal'
+        FurReal.textContent = `I'm about to unleash some "fur-bulous" facts!`
         factContainer.textContent = json.text;
-        newFact.textContent = "Let's play some more fetch";
-        home.textContent = "Time to go home"
+        newFact.textContent = `"Retrieve" More Facts`;
+        home.textContent = "Home"
         
     
         //Set class name
@@ -282,6 +276,7 @@ function displayResults(json) {
         footer.appendChild(newFact);
         footer.appendChild(home);
 
+        
 
         newFact.addEventListener('click', () => {
 
