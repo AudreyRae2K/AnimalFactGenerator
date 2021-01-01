@@ -21,6 +21,7 @@ function erase() {
 
     
     document.getElementById('right').style.display = "none";
+   
     
 
     // let factContainer = document.createElement('div');
