@@ -21,9 +21,9 @@ catFacts.addEventListener('click', erase)
 function erase() {
     
     document.getElementById('right').style.display = "none";
-    let factContainer = document.createElement('div');
-    // let showerCat = document.createElement('IMG')
-    // let rightContainer = document.createElement('div');
+    // let factContainer = document.createElement('div');
+    let showerCat = document.createElement('IMG')
+    let rightContainer = document.createElement('div');
 
     // let bubbles = document.createElement('div');
     // let bubbleOne = document.createElement('div');
@@ -42,12 +42,12 @@ function erase() {
 
     
 
-    // showerCat.src = "./assets/ShowerCapCat2.jpeg";
+    showerCat.src = "./assets/ShowerCapCat2.jpeg";
     
     // Create Class Name
     factContainer.className = "factContainer"
-    // showerCat.className = "showerCat"
-    // rightContainer.className = "rightSide";
+    showerCat.className = "showerCat"
+    rightContainer.className = "rightSide";
     
     // bubbles.className = "bubbles";
     // bubbleOne.className = "bubble";
@@ -61,7 +61,6 @@ function erase() {
     // bubbleNine.className = "bubble";
     // bubbleTen.className = "bubble";
     
-
 
     rightContainer.appendChild(showerCat);
     bubbles.appendChild(bubbleOne);
@@ -134,11 +133,7 @@ function displayFacts(json) {
         section.appendChild(Fact);
         footer.appendChild(button);
         footer.appendChild(mainPage);
-        // sideText.appendChild(section);
-        // sideText.appendChild(footer);
-
-        factContainer.appendChild(section);
-        factContainer.appendChild(footer);
+        
 
         button.addEventListener('click', () => {
 
@@ -232,10 +227,6 @@ function displayFacts(json) {
 
 
 
-
-
-
-
 dogFacts.addEventListener('click', clear) 
 
 function clear() {
@@ -298,8 +289,6 @@ function displayResults(json) {
         footer.appendChild(newFact);
         footer.appendChild(home);
 
-        factContainer.appendChild(section);
-        sfactContainer.appendChild(footer);
 
         newFact.addEventListener('click', () => {
 
