@@ -19,10 +19,11 @@ const ScreenView = document.getElementById('wholePage');
 catFacts.addEventListener('click', erase) 
 
 function erase() {
+
     
     document.getElementById('right').style.display = "none";
     // let factContainer = document.createElement('div');
-    let showerCat = document.createElement('IMG')
+    let showerCat = document.createElement('IMG');
     let rightContainer = document.createElement('div');
 
     // let bubbles = document.createElement('div');
@@ -169,7 +170,7 @@ function clear() {
 
 
     // let factContainer = document.createElement('div');
-    let showerDog = document.createElement('IMG')
+    let showerDog = document.createElement('IMG');
     let rightContainer = document.createElement('div');
 
     // let bubbles = document.createElement('div');
@@ -206,7 +207,7 @@ function clear() {
     
 
 
-    rightContainer.appendChild(showerDog);
+    
     // bubbles.appendChild(bubbleOne);
     // bubbles.appendChild(bubbleTwo);
     // bubbles.appendChild(bubbleThree);
@@ -218,22 +219,15 @@ function clear() {
     // bubbles.appendChild(bubbleNine);
     // bubbles.appendChild(bubbleTen);
     // rightContainer.appendChild(bubbles);
+    
     ScreenView.appendChild(rightContainer);
+    rightContainer.appendChild(showerDog);
 
 
  
 }
 
 
-
-// dogFacts.addEventListener('click', clear) 
-
-// function clear() {
-//     // catFacts.remove();
-//     // dogFacts.remove();
-//     document.getElementById('right').style.display = "none";
-    
-// }
 
 dogFacts.addEventListener('click', link)
 

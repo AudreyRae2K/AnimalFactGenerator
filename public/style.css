@@ -10,6 +10,7 @@ html, body {
 }
 
 #wholePage {
+    /* this adjusts how the buttons are displayed on the first page */
     display: flex;
 
 }
@@ -31,7 +32,7 @@ html, body {
 }
 
 .factContainer {
-    
+    /* display: none; */
     /* display: flex; */
     width: 50vw;
 }
@@ -111,7 +112,7 @@ button.AskMe {
 
     width: 50vw;
     height: 100vh;
-    position: fixed right;
+    /* position: fixed right; */
     
     
 
@@ -120,8 +121,14 @@ button.AskMe {
 
 .showerCat {
 
-    /* position: fixed; */
-    height: 100%;
+    position: fixed;
+    height: 100vh;
+
+}
+
+.showerDog {
+    position: fixed;
+    height: 100vh;
 }
 
 /* Bubble animation from https://codepen.io/Momika/pen/ydaWmQ  */
@@ -226,7 +233,9 @@ button.AskMe {
       bottom:1080px;
       transform:translateX(-200px);
     }
-  } */
+  } 
+
+
 /* Cat Specific  Design */
 
 /* Dog Specific */
