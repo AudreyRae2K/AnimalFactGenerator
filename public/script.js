@@ -45,7 +45,7 @@ function erase() {
     showerCat.src = "./assets/ShowerCapCat2.jpeg";
     
     // Create Class Name
-    factContainer.className = "factContainer"
+    // factContainer.className = "factContainer"
     showerCat.className = "showerCat"
     rightContainer.className = "rightSide";
     
@@ -62,20 +62,21 @@ function erase() {
     // bubbleTen.className = "bubble";
     
 
-    rightContainer.appendChild(showerCat);
-    bubbles.appendChild(bubbleOne);
-    bubbles.appendChild(bubbleTwo);
-    bubbles.appendChild(bubbleThree);
-    bubbles.appendChild(bubbleFour);
-    bubbles.appendChild(bubbleFive);
-    bubbles.appendChild(bubbleSix);
-    bubbles.appendChild(bubbleSeven);
-    bubbles.appendChild(bubbleEight);
-    bubbles.appendChild(bubbleNine);
-    bubbles.appendChild(bubbleTen);
-    showerCat.appendChild(bubbles);
+    
+    // bubbles.appendChild(bubbleOne);
+    // bubbles.appendChild(bubbleTwo);
+    // bubbles.appendChild(bubbleThree);
+    // bubbles.appendChild(bubbleFour);
+    // bubbles.appendChild(bubbleFive);
+    // bubbles.appendChild(bubbleSix);
+    // bubbles.appendChild(bubbleSeven);
+    // bubbles.appendChild(bubbleEight);
+    // bubbles.appendChild(bubbleNine);
+    // bubbles.appendChild(bubbleTen);
+    // showerCat.appendChild(bubbles);
+    
     ScreenView.appendChild(rightContainer);
-
+    rightContainer.appendChild(showerCat);
 
  
 }
